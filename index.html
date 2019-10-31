@@ -5,10 +5,10 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
       <link rel="stylesheet" href="css/style.css">
-      <title>Сайт на Bootstrap 4 + BEM</title>
+      <title>HR Tape</title>
    </head>
    <body>
       <header class="menu">
@@ -16,8 +16,8 @@
             <div class="row">
                <div class="col-xl-12">
                   <nav>
-                     <ul class="d-flex justify-content-center">
-                        <li><a class="active" href="#">Главная</a></li>
+                     <ul class="d-flex justify-content-center" id="top-menu">
+                        <li class="active"><a href="#">Главная</a></li>
                         <li><a href="#about">Обо мне</a></li>
                         <li><a href="#info">Резюме</a></li>
                         <li><a href="#portfolio">Портфолио</a></li>
@@ -33,7 +33,7 @@
             <div class="row justify-content-center">
                <div class="col-xl-6 aleft">
                   <h2>
-                  Солоницын Ян Янович</h1>
+                  HR Tape</h1>
                   <p>Web-разработчик / html-верстальщик</p>
                   <p>Программист PHP / Javascript</p>
                </div>
@@ -43,17 +43,22 @@
             </div>
          </div>
       </section>
-      <section class="two">
+      <section class="two" id="about">
          <div class="container">
             <div class="row justify-content-center">
                <div class="col-xl-10">
                   <h1>Немного о себе</h1>
                   <p>Доброго времени суток, меня зовут Ян. Занимаюсь разработкой сайтов. Создаю сайты, которые отлично смотрятся, быстро загружаются, функциональны и просты в использовании. Любой начатый проект довожу до конца, постоянно совершенствую свой профессиональный уровень. Вы можете заказать у меня разработку сайта с нуля, или связаться со мной для сотрудничества.</p>
+                  
+                  <p><i class="fas fa-envelope contact"></i>hr.takes@gmail.com</p>
+                  <p><i class="fab fa-vk contact"></i>hr_tape</p>
+                  <p><i class="fas fa-phone contact"></i>+7 918 107 76 43</p>
+                 
                </div>
             </div>
          </div>
       </section>
-      <section class="three">
+      <section class="three" id="info">
          <div class="container">
             <div class="row justify-content-center">
                <div class="col-xl-12">
@@ -66,7 +71,7 @@
                      </section>
                      <section>
                         <i class="fas fa-book"></i>
-                        <h3>Самообразование</h3>
+                        <h3>Обучение</h3>
                         <p>Курсы в интернете, видеокурсы, книги, документация, форумы, статьи...
                            Созданием сайтов занимаюсь с 2016 года по настоящее время.
                         </p>
@@ -86,19 +91,19 @@
             </div>
          </div>
       </section>
-      <section class="four">
+      <section class="four" id="portfolio">
          <div class="container">
             <div class="row justify-content-center">
                <div class="col-xl-12">
                   <h1>Портфолио</h1>
                   <div class="works">
-                        <a href="#" class="col-xl-4">Макет</a><a href="#" class="col-xl-4">Макет</a><a href="#" class="col-xl-4">Макет</a>
+                        <a href="https://agrotender.com.ua" class="col-xl-4" style="background-image: url(../img/portfolio/1.jpg);"></a><a href="https://dezprice.ru/" class="col-xl-4" style="background-image: url(../img/portfolio/2.jpg);"></a><a href="https://sochi.rsc.su/" class="col-xl-4" style="background-image: url(../img/portfolio/3.jpg);"></a>
                   </div>
                </div>
             </div>
          </div>
       </section>
-      <section class="five">
+      <section class="five" id="contacts">
          <div class="container">
             <div class="row justify-content-center">
                <div class="col-xl-12">
@@ -127,5 +132,7 @@
       <footer>
          © Ян Солоницын, 2016 - 2019
       </footer>
+      <script type="text/javascript" src="js/jquery.js"></script>
+      <script type="text/javascript" src="js/script.js"></script>
    </body>
 </html>
